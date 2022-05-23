@@ -17,11 +17,11 @@ android {
         exclude 'META-INF/robovm/ios/robovm.xml'
     }
     defaultConfig {
-        applicationId "com.xlab13.yummycarrot"
+        applicationId "com.psec.catchcarrot"
         minSdkVersion 16
         targetSdkVersion 30
-        versionCode 2
-        versionName "1.1"
+        versionCode 1
+        versionName "1.0.0"
         multiDexEnabled true
 
     }
@@ -88,7 +88,7 @@ task run(type: Exec) {
     }
 
     def adb = path + "/platform-tools/adb"
-    commandLine "$adb", 'shell', 'am', 'start', '-n', 'com.xlab13.rainyeggs/com.xlab13.yummycarrot.AndroidLauncher'
+    commandLine "$adb", 'shell', 'am', 'start', '-n', 'com.psec.catchcarrot/com.psec.catchcarrot.AndroidLauncher'
 }
 
 eclipse.project.name = appName + "-android"
